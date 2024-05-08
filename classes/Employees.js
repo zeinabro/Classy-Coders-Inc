@@ -42,6 +42,17 @@ class Employees {
             this.#isHired=false
         }
     }
+
+    promote(position){
+        this.position=position
+        if (position=="Manager"){
+            this.#salary=1000
+        } else if (position=="SoftwareEngineer"){
+            this.#salary=750
+        } else if (position=="SalesPerson"){
+            this.#salary=500
+        }
+    }
     
 }
 
