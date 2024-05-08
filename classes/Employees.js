@@ -25,6 +25,9 @@ class Employees {
     }
 
     setSalary(amount){
+        if (amount<0){
+            throw new Error("Salary cannot be negative")
+        }
         this.#salary=amount
     }
 
